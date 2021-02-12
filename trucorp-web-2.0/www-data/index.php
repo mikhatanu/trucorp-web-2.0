@@ -23,7 +23,7 @@
                 </tr>
 
                 <tr>
-                    <th><?php $data[0]?></th>
+                    <th><?php $data[1]?></th>
 
                 </tr>
               
