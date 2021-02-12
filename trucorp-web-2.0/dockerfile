@@ -1,0 +1,10 @@
+FROM php:apache
+COPY ./www-data /var/www/html
+RUN docker-php-ext-install mysqli
+RUN docker-php-ext-enable mysqli
+
+EXPOSE 80
+VOLUME /uasSem5/backup_data/backupWeb
+
+RUN chmod -R 774 /var/www/html
+
