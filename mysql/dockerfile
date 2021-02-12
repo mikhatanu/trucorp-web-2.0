@@ -1,0 +1,6 @@
+FROM mysql
+ENV MYSQL_ALLOW_EMPTY_PASSWORD=yes
+ENV MYSQL_DATABASE=Trucorp
+ADD trucorp-db.sql /docker-entrypoint-initdb.d/
+
+VOLUME /uasSem5/backup-data/backupDB/
