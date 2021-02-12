@@ -26,12 +26,7 @@
                     <th><?=$conn?></th>
 
                 </tr>
-                <?php
-                }
-                ?>
-        <?php
-    
-?>
+              
     
 </body>
 </html>
