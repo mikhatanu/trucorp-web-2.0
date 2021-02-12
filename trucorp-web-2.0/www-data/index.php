@@ -15,7 +15,7 @@
 
     $query="SELECT COUNT(*) FROM users";
     $conn = $connection->query($query);
-    
+    $data = $conn->fetch_array()
         ?>
             <table>
                 <tr>
@@ -23,7 +23,7 @@
                 </tr>
 
                 <tr>
-                    <th><?=$conn?></th>
+                    <th><?php $data[0]?></th>
 
                 </tr>
               
