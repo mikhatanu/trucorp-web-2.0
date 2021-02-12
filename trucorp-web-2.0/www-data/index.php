@@ -13,23 +13,18 @@
         die('Connection failed: ' . $connection->connect_error);
     }
 
-    $query="SELECT * FROM users";
+    $query="SELECT COUNT(*) FROM users";
     $conn = $connection->query($query);
     
         ?>
             <table>
                 <tr>
-                    <th>id</th>
-                    <th>Nama</th>
-                    <th>Kantor (Cabang/Pusat)</th>
+                    <th>Jumlah User</th>
                 </tr>
-                <?php
-                while($data=$conn->fetch_assoc()){
-                ?>
+
                 <tr>
-                    <th><?=$data=['id']?></th>
-                    <th><?=$data=['Nama']?></th>
-                    <th><?=$data=['Kantor(Pusat/Cabang)']?></th>
+                    <th><?=$conn?></th>
+
                 </tr>
                 <?php
                 }
